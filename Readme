@@ -1,0 +1,27 @@
+Tracker is the library
+
+It contains two classes
+    ActionItem - used for serialization
+    ActionTracker - contains the two methods 
+        - AddActionAsync()
+        - GetStatsAsync()
+
+There are two projects
+    Tracker - contains the library for adding actions and getting stats
+    TrackerTests - contains the unit tests for the Tracker library
+
+In order to run the tests, install .netcore 5.0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Directions to run
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+At the command line navigate to the TrackerTests folder.
+
+run
+    dotnet restore - this will load any required .net assemblies installed with the .net cli
+    dotnet test - this will run the tests.
+
+
+    You should see results similar to the following
+    Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: 39 ms 
